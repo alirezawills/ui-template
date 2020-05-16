@@ -1,0 +1,71 @@
+<div class="account-pages"></div>
+        <div class="clearfix"></div>
+        <form (ngSubmit)="register()" #registerform="ngForm">
+
+        <div class="wrapper-page">
+            <div class="text-center">
+                <a href="index.html" class="logo"><span>آقای<span>ادمین</span></span></a>
+                <h5 class="text-muted m-t-0 font-600">پرفروش ترین و محیوب ترین قالب مدیریتی در جهان</h5>
+            </div>
+        	<div class="m-t-40 card-box">
+                <div class="text-center">
+                    <h4 class="text-uppercase font-bold m-b-0">ثبت نام</h4>
+                </div>
+                <div class="panel-body">
+
+
+						<div class="form-group ">
+							<div class="col-xs-12">
+								<input class="form-control" [(ngModel)]="model.firstName" id="firstName" name="firstName"  type="text" required="" placeholder="نام">
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<div class="col-xs-12">
+								<input class="form-control" [(ngModel)]="model.lastName" name="lastName" id="lastName" type="text" required="" placeholder="نام خانوادگی">
+							</div>
+            </div>
+            <div class="form-group ">
+							<div class="col-xs-12">
+								<input class="form-control" [(ngModel)]="model.email" name="email" id="email" type="email" required="" placeholder="ایمیل">
+							</div>
+						</div>
+
+
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input class="form-control" [(ngModel)]="model.password" name="password" id=password type="password" required="" placeholder="پسورد">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-12">
+								<div class="checkbox checkbox-custom">
+									<input id="checkbox-signup" type="checkbox" checked="checked">
+									<label for="checkbox-signup">من مت قوانین را خوانده <a href="#">و قبول میکنم</a></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group text-center m-t-40">
+							<div class="col-xs-12">
+								<button  class="btn btn-custom btn-bordred btn-block waves-effect waves-light" type="submit">
+									ثبت نام
+								</button>
+							</div>
+						</div>
+
+
+
+                </div>
+            </div>
+            <!-- end card-box -->
+
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                  <p class="text-muted">حساب کاربری دارید? <a  [routerLink]="[ '/login' ]"  class="text-primary m-l-5"><b>ورود</b></a></p>
+              </div>
+          </div>
+
+        </div>
+      </form>

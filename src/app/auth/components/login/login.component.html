@@ -1,0 +1,61 @@
+
+<div class="wrapper-page">
+    <div class="text-center">
+        <img src="../../../../assets/images/logo.jpg">
+    </div>
+  <div class="m-t-40 card-box">
+        <div class="text-center">
+            <h4 class="text-uppercase font-bold m-b-0">ورود</h4>
+        </div>
+        <div class="panel-body">
+             <form (ngSubmit)="login()"  class="form-horizontal m-t-20" #loginForm="ngForm">
+
+
+                <div class="form-group ">
+                    <div class="col-xs-12">
+                        <input [(ngModel)]="model.email" name="email" class="form-control" type="text" required="" placeholder="نام کاربری">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input [(ngModel)]="model.password" name="password" class="form-control" type="password" required="" placeholder="پسورد">
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <div class="col-xs-12">
+                        <div class="checkbox checkbox-custom">
+                            <input id="checkbox-signup" type="checkbox">
+                            <label for="checkbox-signup">
+                                مرا به خاطر بسپار
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group text-center m-t-30">
+                    <div class="col-xs-12">
+                        <button class="btn btn-custom btn-bordred btn-block waves-effect waves-light" type="submit">ورود</button>
+                    </div>
+                </div>
+
+                <div class="form-group m-t-30 m-b-0">
+                    <div class="col-sm-12">
+                        <a href="page-recoverpw.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> آیا رمز خود را فراموش کرده اید؟</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- end card-box-->
+
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p class="text-muted">حساب کاربری ندارید? <a  [routerLink]="[ '/register' ]"  class="text-primary m-l-5"><b>ثبت نام</b></a></p>
+        </div>
+    </div>
+
+</div>
